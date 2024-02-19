@@ -1,5 +1,5 @@
 module github.com/cdarne/webdav
 
-go 1.21
+go 1.22
 
-require golang.org/x/net v0.20.0
+require golang.org/x/net v0.21.0
