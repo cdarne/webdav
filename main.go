@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"runtime"
 	"syscall"
 	"time"
 
@@ -16,6 +17,8 @@ import (
 )
 
 func main() {
+	fmt.Printf("Go Version: %s\n", runtime.Version())
+
 	port := flag.Uint("p", 8100, "port to serve on")
 	directory := flag.String("d", ".", "the directory for WebDAV to serve")
 	flag.Parse()
